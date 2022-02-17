@@ -66,7 +66,6 @@ public class Dex implements PriceSource {
 
             Wallet wallet = walletRepository.findById(request.getWalletId())
                     .orElseThrow(() -> new RuntimeException("Wallet not found"));
-
             Double exchangedValue = request.getValue();
             // validate liquidity
             List<Liquidity> userLiquidities = new ArrayList<>(wallet.getLiquidityList());
