@@ -6,3 +6,15 @@ services:
     image: "my-new-java-image"
     ports:
       - "8084:8080"
+
+  java-app2:
+    container_name: my-java-app3
+    image: "my-new-java-image"
+    ports:
+      - "8085:8080"
+
+  java-app2:
+    container_name: my-java-app2
+    image: "my-new-java-image"
+    ports:
+      - "8086:8080"
