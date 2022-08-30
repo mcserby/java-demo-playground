@@ -95,8 +95,8 @@ public class Dex implements PriceSource {
             double k = x * y;
 
             double delta = exchangedValue;
-            double returnedValue = 0;
-            double exchangePoolNewPrice = 0;
+            double returnedValue;
+            double exchangePoolNewPrice;
 
             if (request.getFrom().equals(exchangePool.getLiquidityOne().getTicker())) {
                 returnedValue = y - k / (x + delta);
